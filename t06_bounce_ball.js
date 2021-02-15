@@ -18,20 +18,17 @@ function draw() {
   x = x + speedX;
   y = y + speedY;
 
-  if (x >= width || y >= height) {
-    //speedX = -random(6);
-    //speedY = -random(6);
-
-    speedX = -4;
-    speedY = -3;
+  if (x >= width) {
+    speedX = -3;
+  } 
+  else if (y >= height) {
+    speedY = -4;
   }
-
-  if ( x <= 0 || y <= 0) {
-    speedX = random(6);
-    speedY = random(6);
-
-    speedX = 4;
-    speedY = 3;
+  else if (x <= 0) {
+    speedX = 3;
+  }
+  else if (y <= 0){
+    speedY = 4;
   }
 
 }
