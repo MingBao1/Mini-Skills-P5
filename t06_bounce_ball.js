@@ -19,13 +19,19 @@ function draw() {
   y = y + speedY;
 
   if (x >= width || y >= height) {
-    speedX = -random(6);
-    speedY = -random(6);
+    //speedX = -random(6);
+    //speedY = -random(6);
+
+    speedX = -4;
+    speedY = -3;
   }
 
   if ( x <= 0 || y <= 0) {
     speedX = random(6);
     speedY = random(6);
+
+    speedX = 4;
+    speedY = 3;
   }
 
 }
