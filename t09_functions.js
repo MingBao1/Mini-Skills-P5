@@ -1,7 +1,8 @@
 /********************************************************/
-//
+/*                                                      */
 /********************************************************/
 var slider
+
 var ball = {
   dia: 0,
   rad:0,
@@ -69,8 +70,7 @@ function setup() {
 }
 
 function draw() {
-  background(200, 100, 20);
-  ballDia = slider.value();
+  background(200, 100, 20, 20);
 
   ball.sliderUpdate();
   ball.move();
@@ -80,5 +80,5 @@ function draw() {
 
 function createSliderFunc() {
   slider = createSlider(30, 200, 50);
-  slider.position (0, 200);
+  slider.position (0, 0);
 }
