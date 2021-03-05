@@ -12,7 +12,8 @@ var buttonEnd;
 const intervalAmount = 500;
 
 function setup() {
-  createCanvas(400, 400);
+  //createCanvas(400, 400);
+  noCanvas();
   background(random(0, 255), random(0, 255), random(0, 255));
 
   counterText = createP("Counter");
